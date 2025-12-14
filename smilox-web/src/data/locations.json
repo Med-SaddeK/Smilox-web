@@ -1,0 +1,98 @@
+[
+  {
+    "id": "marrakech-gueliz-01",
+    "name": "Smilox - Guéliz",
+    "city": "Marrakech",
+    "address": "Avenue Mohammed V, Guéliz",
+    "lat": 31.6295,
+    "lng": -7.9811,
+    "hours": "08:00 - 23:00",
+    "status": "active",
+    "features": ["Eau filtrée", "Paiement cash", "Paiement carte"],
+    "lastServiceDate": "2025-12-01"
+  },
+  {
+    "id": "casablanca-maarif-01",
+    "name": "Smilox - Maârif",
+    "city": "Casablanca",
+    "address": "Rue Al Fourat, Maârif",
+    "lat": 33.5851,
+    "lng": -7.6366,
+    "hours": "24/7",
+    "status": "active",
+    "features": ["Eau alcaline", "Paiement sans contact"],
+    "lastServiceDate": "2025-12-02"
+  },
+  {
+    "id": "casablanca-anfa-01",
+    "name": "Smilox - Anfa",
+    "city": "Casablanca",
+    "address": "Bd d'Anfa, Place des Nations Unies",
+    "lat": 33.5932,
+    "lng": -7.6200,
+    "hours": "08:00 - 20:00",
+    "status": "maintenance",
+    "features": ["Eau filtrée"],
+    "lastServiceDate": "2025-11-20"
+  },
+  {
+    "id": "rabat-agdal-01",
+    "name": "Smilox - Agdal",
+    "city": "Rabat",
+    "address": "Avenue Fal Ould Oumeir",
+    "lat": 34.0084,
+    "lng": -6.8486,
+    "hours": "24/7",
+    "status": "active",
+    "features": ["Eau fraîche", "Paiement NFC"],
+    "lastServiceDate": "2025-12-03"
+  },
+  {
+    "id": "tanger-centre-01",
+    "name": "Smilox - Tanger City",
+    "city": "Tanger",
+    "address": "Boulevard Pasteur",
+    "lat": 35.7766,
+    "lng": -5.8037,
+    "hours": "07:00 - 22:00",
+    "status": "active",
+    "features": ["Eau gazeuse", "Eau plate"],
+    "lastServiceDate": "2025-12-04"
+  },
+  {
+    "id": "agadir-marina-01",
+    "name": "Smilox - Marina",
+    "city": "Agadir",
+    "address": "Marina d'Agadir, Quai Ouest",
+    "lat": 30.4199,
+    "lng": -9.6006,
+    "hours": "09:00 - 23:00",
+    "status": "active",
+    "features": ["Eau minérale", "Gobelets bio"],
+    "lastServiceDate": "2025-11-30"
+  },
+  {
+    "id": "fes-ville-nouvelle-01",
+    "name": "Smilox - Fès VN",
+    "city": "Fès",
+    "address": "Avenue Hassan II",
+    "lat": 34.0326,
+    "lng": -5.0003,
+    "hours": "08:00 - 22:00",
+    "status": "active",
+    "features": ["Eau filtrée"],
+    "lastServiceDate": "2025-12-05"
+  },
+  {
+    "id": "marrakech-hivernage-01",
+    "name": "Smilox - Hivernage",
+    "city": "Marrakech",
+    "address": "Boulevard Mohamed VI",
+    "lat": 31.6214,
+    "lng": -7.9947,
+    "hours": "24/7",
+    "status": "active",
+    "features": ["Premium"],
+    "lastServiceDate": "2025-12-06"
+  }
+]
