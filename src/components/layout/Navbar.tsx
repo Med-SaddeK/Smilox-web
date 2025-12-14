@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Droplets } from "lucide-react";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
 
 export function Navbar() {
     const { t, lang, setLang } = useLanguage();

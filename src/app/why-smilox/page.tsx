@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PiggyBank, Leaf, HeartPulse, Clock, Sparkles } from "lucide-react";
 
 export default function WhySmiloxPage() {
-    const { t } = useLanguage();
+    useLanguage();
 
     const benefits = [
         {
@@ -40,7 +40,7 @@ export default function WhySmiloxPage() {
             <div className="text-center mb-16">
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Pourquoi choisir Smilox ?</h1>
                 <p className="text-xl text-white/60 max-w-2xl mx-auto">
-                    Plus qu'une simple eau, c'est un choix intelligent pour votre portefeuille, votre santé et la planète.
+                    Plus qu&apos;une simple eau, c&apos;est un choix intelligent pour votre portefeuille, votre santé et la planète.
                 </p>
             </div>
 

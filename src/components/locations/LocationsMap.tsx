@@ -42,7 +42,10 @@ function ChangeView({ center, zoom }: { center: [number, number]; zoom: number }
 export default function LocationsMap({ locations, center, zoom }: MapProps) {
     // Fix for window undefined during SSR
     const [mounted, setMounted] = useState(false);
-    useEffect(() => setMounted(true), []);
+    useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setMounted(true);
+    }, []);
 
     if (!mounted) return <div className="h-full w-full bg-white/5 animate-pulse rounded-xl" />;
 

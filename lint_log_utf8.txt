@@ -1,0 +1,98 @@
+﻿
+> smilox-web@0.1.0 lint
+> eslint
+
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\app\about\page.tsx
+  12:36   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  12:65   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  15:168  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\app\admin\locations\page.tsx
+   8:60  warning  'DialogTrigger' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+  25:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\app\admin\locations\page.tsx:25:13
+  23 |         // Check session
+  24 |         if (sessionStorage.getItem("admin_auth") === "true") {
+> 25 |             setIsAuthenticated(true);
+     |             ^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  26 |         }
+  27 |     }, []);
+  28 |  react-hooks/set-state-in-effect
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\app\water-quality\page.tsx
+   8:13   warning  't' is assigned a value but never used                           @typescript-eslint/no-unused-vars
+  33:41   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  68:111  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\app\why-smilox\page.tsx
+   8:13  warning  't' is assigned a value but never used                           @typescript-eslint/no-unused-vars
+  43:28  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  43:46  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\components\layout\Navbar.tsx
+  9:10  warning  'cn' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\components\locations\LocationsMap.tsx
+  45:21  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\components\locations\LocationsMap.tsx:45:21
+  43 |     // Fix for window undefined during SSR
+  44 |     const [mounted, setMounted] = useState(false);
+> 45 |     useEffect(() => setMounted(true), []);
+     |                     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  46 |
+  47 |     if (!mounted) return <div className="h-full w-full bg-white/5 animate-pulse rounded-xl" />;
+  48 |  react-hooks/set-state-in-effect
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\contexts\LanguageContext.tsx
+  24:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\contexts\LanguageContext.tsx:24:13
+  22 |         const saved = localStorage.getItem("smilox-lang") as Lang;
+  23 |         if (saved && (saved === "fr" || saved === "en")) {
+> 24 |             setLangState(saved);
+     |             ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  25 |         }
+  26 |     }, []);
+  27 |  react-hooks/set-state-in-effect
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\hooks\useLocations.ts
+  46:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\kharb\OneDrive\Desktop\First_Project\smilox-web\src\hooks\useLocations.ts:46:17
+  44 |                 });
+  45 |
+> 46 |                 setLocations(merged);
+     |                 ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  47 |             } catch (e) {
+  48 |                 console.error("Failed to parse locations from localStorage", e);
+  49 |             }  react-hooks/set-state-in-effect
+
+Γ£û 15 problems (11 errors, 4 warnings)
+

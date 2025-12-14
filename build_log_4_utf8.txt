@@ -1,0 +1,57 @@
+﻿
+> smilox-web@0.1.0 build
+> next build
+
+node.exe :  ΓÜá Warning: Next.js inferred your 
+workspace root, but it may not be correct.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( ΓÜá War 
+   ning: N...not be correct.:String) [], RemoteExcep  
+  tion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ We detected multiple lockfiles and selected the 
+directory of C:\Users\kharb\OneDrive\Desktop\First_Pro
+ject\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in 
+your Next.js config, or consider removing one of the 
+lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/confi
+g/next-config-js/turbopack#root-directory for more 
+information.
+ Detected additional lockfiles: 
+   * C:\Users\kharb\OneDrive\Desktop\First_Project\smi
+lox-web\package-lock.json
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 1754.8ms
+   Running TypeScript ...
+   Collecting page data using 11 workers ...
+   Generating static pages using 11 workers (0/12) ...
+   Generating static pages using 11 workers (3/12) 
+   Generating static pages using 11 workers (6/12) 
+   Generating static pages using 11 workers (9/12) 
+ Γ£ô Generating static pages using 11 workers (12/12) in 465.7ms
+   Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ Γùï /about
+Γö£ Γùï /admin/locations
+Γö£ Γùï /contact
+Γö£ Γùï /locations
+Γö£ Γùï /robots.txt
+Γö£ Γùï /sitemap.xml
+Γö£ Γùï /water-quality
+Γöö Γùï /why-smilox
+
+
+Γùï  (Static)  prerendered as static content
+

@@ -1,0 +1,39 @@
+﻿
+> smilox-web@0.1.0 build
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+  Γû▓ Next.js 14.2.5
+
+   Creating an optimized production build ...
+node.exe :  ΓÜá Found lockfile missing swc 
+dependencies, patching...
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( ΓÜá Fou 
+   nd lock...es, patching...:String) [], RemoteExcep  
+  tion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ ΓÜá Lockfile was successfully patched, please run 
+"npm install" to ensure @next/swc dependencies are 
+downloaded
+Failed to compile.
+
+src\app\layout.tsx
+`next/font` error:
+Unknown font `Geist`
+
+src\app\layout.tsx
+`next/font` error:
+Unknown font `Geist Mono`
+
+
+> Build failed because of webpack errors

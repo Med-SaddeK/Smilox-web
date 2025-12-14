@@ -5,7 +5,7 @@ import { useLocations, Location } from "@/hooks/useLocations";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "sonner";
 import { Edit, Plus, Trash } from "lucide-react";
 
@@ -22,6 +22,7 @@ export default function AdminPage() {
     useEffect(() => {
         // Check session
         if (sessionStorage.getItem("admin_auth") === "true") {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setIsAuthenticated(true);
         }
     }, []);

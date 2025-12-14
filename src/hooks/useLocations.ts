@@ -43,6 +43,7 @@ export function useLocations() {
                     }
                 });
 
+                // eslint-disable-next-line react-hooks/set-state-in-effect
                 setLocations(merged);
             } catch (e) {
                 console.error("Failed to parse locations from localStorage", e);

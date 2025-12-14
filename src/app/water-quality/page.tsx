@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ShieldCheck, Droplets, Filter } from "lucide-react";
 
 export default function WaterQualityPage() {
-    const { t } = useLanguage();
+    useLanguage();
 
     const steps = [
         { title: "Filtration Sédimentaire", desc: "Élimine le sable, la rouille et les particules en suspension." },
@@ -30,7 +30,7 @@ export default function WaterQualityPage() {
                     Qualité & Sécurité
                 </h1>
                 <p className="text-xl text-white/60 mb-12">
-                    Découvrez pourquoi l'eau Smilox est plus pure, plus sûre et meilleure pour votre santé.
+                    Découvrez pourquoi l&apos;eau Smilox est plus pure, plus sûre et meilleure pour votre santé.
                 </p>
 
                 {/* Process Steps */}
@@ -65,7 +65,7 @@ export default function WaterQualityPage() {
                             <Droplets className="w-8 h-8 text-blue-400 mt-1" />
                             <div>
                                 <h3 className="text-lg font-bold text-white">Goût Parfait</h3>
-                                <p className="text-white/60">Ni chlore, ni arrière-goût métallique. Juste de l'eau pure.</p>
+                                <p className="text-white/60">Ni chlore, ni arrière-goût métallique. Juste de l&apos;eau pure.</p>
                             </div>
                         </div>
                     </div>
